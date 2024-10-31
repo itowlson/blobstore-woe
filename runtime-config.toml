@@ -1,0 +1,2 @@
+[blob_store.default]
+type = "in_memory"
