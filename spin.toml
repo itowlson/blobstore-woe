@@ -11,9 +11,9 @@ route = "/..."
 component = "blobby-blobby-blobby"
 
 [component.blobby-blobby-blobby]
-source = "target/wasm32-wasi/release/blobby_blobby_blobby.wasm"
+source = "target/wasm32-wasip1/release/blobby_blobby_blobby.wasm"
 allowed_outbound_hosts = []
-blob_containers = ["default"]
+blob_containers = ["default", "azz", "aws"]
 [component.blobby-blobby-blobby.build]
-command = "cargo build --target wasm32-wasi --release"
+command = "cargo build --target wasm32-wasip1 --release"
 watch = ["src/**/*.rs", "Cargo.toml"]
